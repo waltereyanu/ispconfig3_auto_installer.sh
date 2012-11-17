@@ -473,32 +473,6 @@ function master_server ()
 	cd /tmp/ispconfig-3.0.5/install
 	php -q install.php
 	
-	# We change SSL certificates
-	while :
-	do
-		clear
-		echo "
-
-		#-------------------------------------------------------------------------------
-		#   Please remember to copy from wiki.ltd.ug the certificates
-		#               ----------------------------
-		#
-		#   vim /etc/postfix/smtpd.cert
-		#   vim /etc/postfix/smtpd.key
-		#   /usr/lib/courier-imap/share/imapd.pem
-		#   /etc/pki/tls/cert.pem
-		#   /etc/pki/tls/certs/localhost.crt
-		#   /etc/pki/tls/private/localhost.key
-		#   /usr/local/ispconfig/interface/ssl/ispserver.crt
-		#   /usr/local/ispconfig/interface/ssl/ispserver.key
-		#
-		#   /etc/init.d/nginx restart
-		#   /etc/init.d/postfix restart
-		#
-		#-------------------------------------------------------------------------------
-		"
-	done
-	
 	clear
 	echo"
 	#-------------------------------------------------------------------------------
